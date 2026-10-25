@@ -28,7 +28,7 @@ You can install Helix directly from Maiden using the `;install` command:
 1. Open Maiden in your browser (`http://norns.local` or via your norns' IP address).
 2. Run the following command in the Maiden console:
    ```text
-   ;install [https://github.com/sumik-svg/helix](https://github.com/sumik-svg/helix)
+   ;install https://github.com/sumik-svg/helix
    ```
 3. Once the installation finishes, restart your norns (or run `;restart` in the console) to compile the SuperCollider engine (`Engine_Helix.sc`).
 
