@@ -29,3 +29,38 @@ You can install Helix directly from Maiden using the `;install` command:
 2. Run the following command in the Maiden console:
    ```text
    ;install [https://github.com/sumik-svg/helix](https://github.com/sumik-svg/helix)
+   ```
+3. Once the installation finishes, restart your norns (or run `;restart` in the console) to compile the SuperCollider engine (`Engine_Helix.sc`).
+
+---
+
+## Controls & Navigation
+
+### Encoders
+* **E1**: Continuous Master Tempo / Base Speed (Helixes 2 & 3 follow Helix 1 proportionally).
+* **E2**: Harmonic Scale Shift (Selects root notes within the Pentatonic scale).
+* **E3**: Phase Drift (Introduces individual timing drift/swing per layer).
+
+### Keys
+* **K3**: Select active Helix layer (`Helix 1` -> `Helix 2` -> `Helix 3`).
+* **K2**: Start / Stop the selected Helix layer. (Starting Helix 1 triggers the ambient drone buildup).
+* **K1 (Hold) + E2**: Change Root Key (`C` ~ `B`).
+* **K1 (Hold) + K2**: Smooth phase synchronization back to Helix 1.
+* **K1 (Hold) + K3**: Mutation (Shuffles DNA sequence data across all layers).
+
+---
+
+## PARAMS Menu Configuration
+
+Under the norns **PARAMS** menu, you can customize:
+* **MIDI Device**: Select your MIDI output port.
+* **Drone CC Sync**: Toggle automatic CC transmission (`Off` / `On`).
+* **CC 1 / 2 / 3 Number**: Remap MIDI CC numbers to match your external synthesizer's architecture (Default: CC 38, 41, 55 for LIVEN Ambient Ø).
+* **Internal Pluck Voice**: Toggle internal SuperCollider pluck voices alongside MIDI output (`Off (MIDI Only)` / `On (Dual)`).
+* **Root Key**: Select global root key.
+
+---
+
+## License
+
+This project is open-source and available under the [MIT License](LICENSE).
